@@ -256,8 +256,8 @@
 					addLineShape( smileyShape.holes[ i ], 0xf000f0, - 200, 250, 0, 0, 0, Math.PI, 1 );
 				}
 				//
-				renderer = new THREE.WebGLRenderer( { antialias: true } );
-				renderer.setClearColor( 0xffffff, 0 );
+				renderer = new THREE.WebGLRenderer( { alpha: true } );
+				renderer.setClearColor( 0x000000, 0 );
 				renderer.setPixelRatio( window.devicePixelRatio );
 				renderer.setSize( window.innerWidth, window.innerHeight );
 				container.appendChild( renderer.domElement );
